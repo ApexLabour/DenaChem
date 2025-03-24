@@ -1689,9 +1689,9 @@ section,
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
+.contact input[type=text]::placeholder,
+.contact input[type=email]::placeholder,
+.contact textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
@@ -1706,6 +1706,10 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.contact-placeholder {
+  color: #c9c9c9;
 }
 
 /*--------------------------------------------------------------
