@@ -1094,7 +1094,7 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
+.products .products-item {
   background-color: var(--surface-color);
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
@@ -1103,7 +1103,7 @@ section,
   height: 100%;
 }
 
-.services .service-item .icon {
+.products .products-item .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -1117,13 +1117,13 @@ section,
   transform-style: preserve-3d;
 }
 
-.services .service-item .icon i {
+.products .products-item .icon i {
   color: var(--contrast-color);
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item .icon::before {
+.products .products-item .icon::before {
   position: absolute;
   content: "";
   left: -8px;
@@ -1136,37 +1136,37 @@ section,
   transform: translateZ(-1px);
 }
 
-.services .service-item h3 {
+.products .products-item h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
 
-.services .service-item p {
+.products .products-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .service-item:hover {
+.products .products-item:hover {
   background: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.services .service-item:hover .icon {
+.products .products-item:hover .icon {
   background: var(--surface-color);
 }
 
-.services .service-item:hover .icon i {
+.products .products-item:hover .icon i {
   color: var(--accent-color);
 }
 
-.services .service-item:hover .icon::before {
+.products .products-item:hover .icon::before {
   background: color-mix(in srgb, var(--background-color), transparent 70%);
 }
 
-.services .service-item:hover h3,
-.services .service-item:hover p {
+.products .products-item:hover h3,
+.products .products-item:hover p {
   color: var(--contrast-color);
 }
 
@@ -1292,7 +1292,7 @@ section,
 /*--------------------------------------------------------------
 # Doctors Section
 --------------------------------------------------------------*/
-.doctors .team-member {
+.values .team-member {
   background-color: var(--surface-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -1303,46 +1303,46 @@ section,
 }
 
 @media (max-width: 468px) {
-  .doctors .team-member {
+  .values .team-member {
     flex-direction: column;
     justify-content: center !important;
     align-items: center !important;
   }
 }
 
-.doctors .team-member .pic {
+.values .team-member .pic {
   overflow: hidden;
   width: 150px;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
-.doctors .team-member .pic img {
+.values .team-member .pic img {
   transition: ease-in-out 0.3s;
 }
 
-.doctors .team-member:hover {
+.values .team-member:hover {
   transform: translateY(-10px);
 }
 
-.doctors .team-member .member-info {
+.values .team-member .member-info {
   padding-left: 30px;
 }
 
 @media (max-width: 468px) {
-  .doctors .team-member .member-info {
+  .values .team-member .member-info {
     padding: 30px 0 0 0;
     text-align: center;
   }
 }
 
-.doctors .team-member h4 {
+.values .team-member h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
 }
 
-.doctors .team-member span {
+.values .team-member span {
   display: block;
   font-size: 15px;
   padding-bottom: 10px;
@@ -1350,7 +1350,7 @@ section,
   font-weight: 500;
 }
 
-.doctors .team-member span::after {
+.values .team-member span::after {
   content: "";
   position: absolute;
   display: block;
@@ -1362,17 +1362,17 @@ section,
 }
 
 @media (max-width: 468px) {
-  .doctors .team-member span::after {
+  .values .team-member span::after {
     left: calc(50% - 25px);
   }
 }
 
-.doctors .team-member p {
+.values .team-member p {
   margin: 10px 0 0 0;
   font-size: 14px;
 }
 
-.doctors .team-member .social {
+.values .team-member .social {
   margin-top: 12px;
   display: flex;
   align-items: center;
@@ -1381,12 +1381,12 @@ section,
 }
 
 @media (max-width: 468px) {
-  .doctors .team-member .social {
+  .values .team-member .social {
     justify-content: center;
   }
 }
 
-.doctors .team-member .social a {
+.values .team-member .social a {
   background: color-mix(in srgb, var(--default-color), transparent 94%);
   transition: ease-in-out 0.3s;
   display: flex;
@@ -1397,21 +1397,21 @@ section,
   height: 36px;
 }
 
-.doctors .team-member .social a i {
+.values .team-member .social a i {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 16px;
   margin: 0 2px;
 }
 
-.doctors .team-member .social a:hover {
+.values .team-member .social a:hover {
   background: var(--accent-color);
 }
 
-.doctors .team-member .social a:hover i {
+.values .team-member .social a:hover i {
   color: var(--contrast-color);
 }
 
-.doctors .team-member .social a+a {
+.values .team-member .social a+a {
   margin-left: 8px;
 }
 
