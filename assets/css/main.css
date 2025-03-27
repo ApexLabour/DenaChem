@@ -8,20 +8,20 @@
 :root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #455443; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #8333a5; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #cb44df; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #2bff00; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #6fff47; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #8333a5;  /* The default color of the main navmenu links */
-  --nav-hover-color: #cb44df; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #2bff00;  /* The default color of the main navmenu links */
+  --nav-hover-color: #6fff47; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #8333a5; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #cb44df; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color: #2bff00; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #6fff47; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -680,7 +680,7 @@ h6 {
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
   display: inline-block;
   line-height: 1;
 }
@@ -691,12 +691,13 @@ h6 {
 
 .footer .footer-contact p {
   margin-bottom: 5px;
+  color: color-mix(in srgb, var(--heading-color));
 }
 
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
 .footer .copyright p {
@@ -933,6 +934,7 @@ section,
 .hero .welcome p {
   font-size: 24px;
   margin: 0;
+  color: #454545;
 }
 
 .hero .content {
@@ -997,7 +999,7 @@ section,
 
 .hero .content .icon-box p {
   font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
 }
 
 /*--------------------------------------------------------------
@@ -1730,9 +1732,9 @@ section,
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 15px #8333a5, 0 0 20px #8333a5, 0 0 25px #8333a5, 0 0 30px #8333a5, 0 0 35px #8333a5, 0 0 40px #8333a5;
+    text-shadow: 0 0 10px #fff, 0 0 15px #2bff00, 0 0 20px #2bff00, 0 0 25px #2bff00, 0 0 30px #2bff00, 0 0 35px #2bff00, 0 0 40px #2bff00;
   }
   to {
-    text-shadow: 0 0 10px #fff, 0 0 15px #cb44df, 0 0 20px #cb44df, 0 0 25px #cb44df, 0 0 30px #cb44df, 0 0 35px #cb44df, 0 0 40px #cb44df;
+    text-shadow: 0 0 10px #fff, 0 0 15px #a2ff88, 0 0 20px #a2ff88, 0 0 25px #a2ff88, 0 0 30px #a2ff88, 0 0 35px #a2ff88, 0 0 40px #a2ff88;
   }
 }
